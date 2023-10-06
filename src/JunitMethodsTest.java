@@ -85,16 +85,30 @@ class JunitMethodsTest {
     }
 
     @Test
-    void test251a20a250(){
-        int num1 = 251;
+    void test20a20a20(){
+        int num1 = 20;
         int num2 = 20;
-        int num3 = 250;
+        int num3 = 20;
 
-        int expected = 251;
+        int expected = 20;
         JunitMethods j = new JunitMethods();
         int actual = j.checkLargest(num1,num2,num3);
         assertEquals(expected,actual);
         System.out.println(actual);
     }
+
+    @Test
+    void testABCD(){
+        String word = "ABCD";
+
+        String expected = "CDAB";
+        JunitMethods j = new JunitMethods();
+        String actual = j.swap(word);
+        System.out.println(actual);
+        assertEquals(expected,actual);
+    }
+
+    @Test
+    void test
 
 }

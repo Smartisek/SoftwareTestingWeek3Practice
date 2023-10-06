@@ -15,6 +15,17 @@ public class JunitMethods {
         return Math.max(firstMax, num3);
     }
 
+    public String swap(String word){
+        char[] parameterWord = word.toCharArray();
+
+        String part1 = word.substring(0,2);
+        String part2 = word.substring(2,4);
 
 
+        String rev = part2 + part1;
+
+        return rev;
+
+
+}
 }
